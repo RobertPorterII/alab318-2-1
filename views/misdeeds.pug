@@ -1,0 +1,14 @@
+doctype html 
+html 
+    head 
+        title="Evil Inc"
+        link(rel="stylesheet", href="style.css")
+        body 
+            h1= "Evil Inc"
+            a(href='/') Evil Lair  
+            a(href='/accomplices') Accomplices
+            p="Tell us about all your dark endeavors to further are mighty cause!"
+             //- part 1 form
+            form(action="/create", method="post")
+                input(type="text") 
+                input(type="submit", value="Send")
